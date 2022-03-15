@@ -1,0 +1,192 @@
+/* Box Model Hack */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+   
+   /* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+   
+.clear{
+     clear: both;
+}
+   
+   /******************************************
+   /* BASE STYLES
+   /*******************************************/
+   
+body{
+     font-family: 'arial', sans-serif;
+}
+a{
+     text-decoration: none;
+}
+h1,h2,h3,h4{
+     color: #000;
+}
+.button{
+     border: 2px solid white;
+     padding: 12px;
+     color: white;
+}
+   /* header and nav bar  */
+nav{
+     background: #000;
+     color: #fff;
+     display: flex;
+     justify-content: space-between;
+}
+nav .mainMenu{
+     display: flex;
+     list-style: none;
+}
+nav .mainMenu li a{
+     display: inline-block;
+     padding: 15px;
+     text-decoration: none;
+     text-transform: uppercase;
+     color: white;
+     font-size: 1.5rem;
+}
+nav .mainMenu li a:hover {
+     color: orange;
+}
+nav .openMenu { 
+     font-size: 2rem;
+     margin: 20px;
+     display: none;
+     cursor: pointer; 
+}
+nav .mainMenu .closeMenu , .icons i {
+     font-size: 2rem;
+     display: none;
+     cursor: pointer;
+}
+.fa-facebook:hover{color: rgb(37, 116, 219);}
+.fa-twitter:hover{color: rgb(86,154 , 242);}
+.fa-instagram:hover{color: rgb(235, 81, 235);}
+.fa-github:hover{color: rgb(231, 128, 60);}
+   
+nav .logo{
+     margin: 6px;
+     font-size:25px;
+     cursor: pointer;
+}
+.logo img{
+     width: 40px;
+     /* height: 100px; */
+}
+
+   /* Content page */
+#first-page{
+     background-image: url(../Img/alexander-naglesta\ first\ page.jpg);
+     background-position: center;
+     background-repeat: no-repeat;
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+}
+#second-page{
+
+}
+.innerSecond{
+     padding: 200px;
+     display: flex;
+     text-align: center;
+     flex-direction: column;
+     align-items: center;
+}
+
+/* .grid-col-span-2{
+     grid-column: span 2;
+
+} */
+#thirdPage{
+     background-color: red;
+}
+#thirdPage .innerThird-grid{
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+
+     width: min(95%, 70rem);
+     gap: 1rem;
+     /* display: flex;
+     flex-direction: row; */
+     width: 100%;
+
+}
+.innerThird-grid img{
+     /* width: 100%; */
+}
+
+
+
+
+
+
+
+
+
+
+   
+@media(max-width: 800px){
+     nav .mainMenu {
+       height: 100vh;
+       position: fixed;
+       top: 0;
+       right: 0;
+       left: 0;
+       z-index:10;
+       flex-direction: column;
+       justify-content: center;
+       align-content: center;
+       background: black;
+       transition: top 1s ease;
+       display: none;
+     }
+     nav .mainMenu .closeMenu{
+       display: block;
+       position: absolute;
+       top:20px;
+       right: 20px;
+     }
+     nav .openMenu{
+       display: block;
+     }
+     nav .mainMenu li a:hover{
+       background: none;
+       color: rgb(223, 110, 34);
+       font-size: 1.6rem;
+     }
+     .icons i{
+       display: inline-block;
+       padding: 50px;
+     }
+   }
+   
+   
+   /******************************************
+   /* LAYOUT
+   /*******************************************/
+   body {
+   
+   }
+   
+   footer {
+   
+   }
+   
+   /******************************************
+   /* ADDITIONAL STYLES
+   /*******************************************/
+   
