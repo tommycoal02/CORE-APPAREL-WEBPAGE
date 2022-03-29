@@ -347,8 +347,6 @@ background: rgb(231, 188, 133);
      }
      .gallery{
           display: grid;
-          /* background: red; */
-          display: none;
      }
      
 }
@@ -365,6 +363,7 @@ background: rgb(231, 188, 133);
      .gallery-item:first-child{
           grid-row: span 1;
      }
+
    
 /******************************************/
 /*******************************************/
