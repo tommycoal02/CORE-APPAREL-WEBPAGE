@@ -3,7 +3,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
+}
    
    /* Clear fix hack */
 .clearfix:after {
@@ -23,11 +23,16 @@
     /* LAYOUT
    /*******************************************/
 html{
-     font-size: 15px;
+     font-size: 17px;
+     overflow-y: scroll;
 }
 body{
-     font-family: 'arial', sans-serif;
+     font-family: 'Roboto', sans-serif;
+     font-family: 'Ropa Sans', sans-serif;
      background: whitesmoke;
+}
+header{
+     font-family: 'Ropa Sans', sans-serif;
 }
 a{
      text-decoration: none;
@@ -112,9 +117,6 @@ nav .logo{
      font-size: 3rem;
      text-align: center;
 }
-/* #first-page:hover{
-     padding: 500px;
-} */
 
 .button:hover{
      background: white;
@@ -135,16 +137,8 @@ nav .logo{
      align-items: center;
 }
 
-/* thirdpage */
-#thirdPageImage{
-     display: block;
-     width: 1200px;
-     height: 130vh;
-     margin: 0 auto;
-     transition: 0.3%;
-     /* background-color: red; */
-     padding: 100px;
-     padding-top: 110px;
+#thirdPage .gallery-item{
+     height: 300px;
 }
 
 #fourthPage{
@@ -158,6 +152,9 @@ nav .logo{
 #fourthPage h3, .imgLinkToSocial, i, p, button{
      margin-top: 35px;
 
+}
+#fourthPage > p{
+     font-style: italic;
 }
 .imgLinkToSocial {
      display: flex;
@@ -179,6 +176,7 @@ nav .logo{
      padding: 10px;
      border: 2px solid black;
      transition: padding 1s;
+     margin-bottom: 10px;
 }
 
 .contactButton:hover{
@@ -243,6 +241,66 @@ img{
      object-fit: cover;
 }
 
+/* OUR BRNDS */
+#headingImgBrands{
+     background-image: url(../Img/alexander-naglesta\ first\ page.jpg);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     height: 200px;
+     justify-content: center;
+     align-items: center;
+}
+#headingImgBrands>h2{
+     justify-content: center;
+     text-align: center;
+     text-transform: capitalize;
+     color: white;
+     padding-block-start: 60px;
+     font-size: 2rem;
+}
+#brandFirstPage{
+     text-align: center;
+     padding-inline: 200px;
+     font-size: large;
+     margin-block: 35px;
+     padding-block: 40px;
+     border-bottom: 1px solid black;
+     
+}
+#brandFirstPage h1{
+     font-size: 4rem;
+}
+.brandFirstPageInnerSection p{
+     padding-inline: 70px;
+     color: rgba(0, 0, 0, 0.564);
+     justify-content: center;
+}
+.brandSecondPageInnerSection{
+     margin-block-start: 100px;
+}
+.brandSecondPageInnerSection h2{
+     text-align: center;
+     color: rgba(203, 178, 35, 0.604);
+     margin-block-end: 40px;
+     /* padding-inline-start: 13px; */
+
+}
+
+.brandLittleImages {
+     display: flex;
+     justify-content: center;
+}
+.brandLittleImages img{
+     display: flex;
+     justify-content: center;
+     width: 230px;
+     height: 200px;
+     border: 1px solid red;
+     margin: 4px;
+}
+
+
 
 /* contact us page  */
 #formPage{
@@ -276,9 +334,6 @@ background: rgb(231, 188, 133);
      margin-inline: 30%;
      /* color: white; */
 }
-
-
-
 
 @media(max-width: 800px){
      nav .mainMenu {
@@ -324,6 +379,10 @@ background: rgb(231, 188, 133);
           display: grid;
           grid-template-columns: repeat(2,1fr);
      }
+     .brandLittleImages{
+          display: grid;
+          grid-template-columns: repeat(2,1fr);
+     }
    
 }
 @media(max-width: 430px){
@@ -332,6 +391,25 @@ background: rgb(231, 188, 133);
      }
      .icons i{
           padding: 30px;
+     }
+
+     /* thirdpage */
+     .gallery-item img{
+          max-width: 100%;
+          height: auto;
+     }
+     #thirdPage{
+          margin-inline: 0.06rem; 
+     }
+     .gallery-item{
+          height:auto;
+          margin:0.5rem;
+     }
+     .gallery-item .innerGallery{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+
      }
      #fourthPage{
           margin:0;
@@ -348,6 +426,7 @@ background: rgb(231, 188, 133);
      .gallery{
           display: grid;
      }
+
      
 }
 @media (min-width: 900px) {
