@@ -124,7 +124,7 @@ nav .logo{
 }
 #second-page{
      background: rgb(231, 188, 133);
-     height: 400px;
+     height: 300px;
 
 }
 
@@ -135,6 +135,7 @@ nav .logo{
      text-align: center;
      flex-direction: column;
      align-items: center;
+     /* background-image: url(../Img/weeee.JPG); */
 }
 
 #thirdPage .gallery-item{
@@ -283,23 +284,19 @@ img{
      text-align: center;
      color: rgba(203, 178, 35, 0.604);
      margin-block-end: 40px;
-     /* padding-inline-start: 13px; */
-
 }
-
-.brandLittleImages {
-     display: flex;
+.brandLittleImages{
+     display: grid;
      justify-content: center;
+     grid-template-columns: repeat(5,1fr);
+     gap: 10px;
 }
+
+
 .brandLittleImages img{
-     display: flex;
-     justify-content: center;
-     width: 230px;
-     height: 200px;
-     border: 1px solid red;
-     margin: 4px;
+     width: 300px;
+     height: 200px; 
 }
-
 
 
 /* contact us page  */
@@ -329,10 +326,9 @@ background: rgb(231, 188, 133);
      padding-bottom: 100px;
 }
 .contactForm button{
-     /* border: 2px solid white; */
      padding: 12px;
      margin-inline: 30%;
-     /* color: white; */
+
 }
 
 @media(max-width: 800px){
@@ -379,12 +375,26 @@ background: rgb(231, 188, 133);
           display: grid;
           grid-template-columns: repeat(2,1fr);
      }
+
+     #brandFirstPage{
+          padding: 0;
+     }
      .brandLittleImages{
-          display: grid;
-          grid-template-columns: repeat(2,1fr);
+          grid-template-columns: repeat(3,1fr);
+          gap: 10px;
+          padding-inline: 25px;
+     }
+     .imgLinkToSocial img{
+          width: 200px;
+          height: 200px; 
+     }
+     
+     footer .mainMenu li a {
+          color: orange;
      }
    
 }
+
 @media(max-width: 430px){
      html{
           font-size: 13px;
@@ -426,9 +436,13 @@ background: rgb(231, 188, 133);
      .gallery{
           display: grid;
      }
-
-     
+     .brandLittleImages{
+          grid-template-columns: repeat(2,1fr);
+          gap: 0.2rem;
+          padding-inline: 20px;
+     }
 }
+
 @media (min-width: 900px) {
      .gallery{
           display: grid;
@@ -442,8 +456,7 @@ background: rgb(231, 188, 133);
      .gallery-item:first-child{
           grid-row: span 1;
      }
-
-   
+}  
 /******************************************/
 /*******************************************/
 
