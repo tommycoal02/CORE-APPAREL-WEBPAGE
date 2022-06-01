@@ -84,6 +84,9 @@ nav .mainMenu .closeMenu , .icons i {
      display: none;
      cursor: pointer;
 }
+.fa-facebook,.fa-twitter,.fa-instagram{
+     color: #fff;
+}
 .fa-facebook:hover{color: rgb(37, 116, 219);}
 .fa-twitter:hover{color: rgb(86,154 , 242);}
 .fa-instagram:hover{color: rgb(235, 81, 235);}
@@ -101,10 +104,12 @@ nav .logo{
 
    /* Content page */
 #first-page{
-     background-image: url(../Img/alexander-naglesta\ first\ page.jpg);
+     background-image: url(../Img/20211201_000633-1-1536x1499.jpg);
      background-position: center;
+     background-size: cover;
      background-repeat: no-repeat;
      height: 100vh;
+     width: auto;
      display: flex;
      justify-content: center;
      align-items: center;
@@ -123,7 +128,8 @@ nav .logo{
      color: black;
 }
 #second-page{
-     background: rgb(231, 188, 133);
+     /* background: rgb(231, 188, 133); */
+     background-color: rgba(197, 172, 28, 0.89);
      height: 300px;
 
 }
@@ -364,6 +370,13 @@ background: rgb(231, 188, 133);
        display: inline-block;
        padding: 40px;
      }
+     #first-page{
+          background-image: url(../Img/20211201_000633-1-1536x1499.jpg);
+          background-position: center;
+          background-size: cover;
+          /* background-repeat: no-repeat; */
+          /* height: 40vh; */
+     }
      #thirdPageImage{
           display: block;
           margin: 0 auto;
@@ -401,6 +414,14 @@ background: rgb(231, 188, 133);
      }
      .icons i{
           padding: 30px;
+     }
+     #first-page{
+          background-image: url(../Img/20211201_000633-1-1536x1499.jpg);
+          background-position: center;
+          background-size: cover;
+          /* background-repeat: no-repeat; */
+          height: 40vh;
+          width: auto;
      }
 
      /* thirdpage */
